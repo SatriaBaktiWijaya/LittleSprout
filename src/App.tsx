@@ -137,10 +137,8 @@ export default function App() {
       {/* ═══ 2. STICKY HEADER ═══ */}
       <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container-main flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center shadow-xs">
-              <Leaf className="w-5 h-5 text-white" />
-            </div>
+          <div className="flex items-center gap-2.5">
+            <img src="/favicon.svg" alt="LittleSprout Logo" className="w-9 h-9 rounded-xl shadow-xs transition-transform hover:scale-105" />
             <div className="flex items-center gap-1.5">
               <span className="font-bold text-lg tracking-tight" style={{ fontFamily: 'var(--font-display, "Bricolage Grotesque", serif)' }}>
                 LittleSprout
@@ -999,11 +997,9 @@ export default function App() {
         <div className="container-main">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                  <Leaf className="w-4 h-4 text-white" />
-                </div>
-                <span className="font-bold text-lg">LittleSprout</span>
+              <div className="flex items-center gap-2.5 mb-4">
+                <img src="/favicon.svg" alt="LittleSprout Logo" className="w-8 h-8 rounded-xl shadow-xs" />
+                <span className="font-bold text-lg text-white">LittleSprout</span>
               </div>
               <p className="text-sm text-gray-400 leading-relaxed">
                 Premium organic baby dairy for the first 1,000 days of life. Because every tummy deserves the purest start.
